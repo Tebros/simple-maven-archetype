@@ -6,7 +6,7 @@ This is a archetype for a clean and simple maven project.
 
 ### Installing
 
-At the moment there is no remote archetype catalog. Therefore if you want to user this archetype, you need to download/clone this project and run the following command.
+At the moment there is no remote archetype catalog. Therefore if you want to user this archetype, you need to download/clone this project and run the following command to build the archetype.
 
 ```
 mvn clean install archetype:update-local-catalog
@@ -39,7 +39,7 @@ The maven archetype contains the following files.
 By default this archetype uses a MIT license. If you want to change your license, please notice the <licenses> tag in the pom.xml file.
 
 ```
-<licenses>MIT</licenses>
+<licenses>...</licenses>
 ```
 
 ## Built With
@@ -52,7 +52,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* [Tebros] (https://github.com/Tebros)
+* [Tebros](https://github.com/Tebros)
 
 ## License
 
