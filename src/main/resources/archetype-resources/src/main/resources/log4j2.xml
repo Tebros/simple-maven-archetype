@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+	<Properties>
+		<Property name="consoleOutputPattern">%highlight{%d{HH:mm:ss} [%t] %-5level (%logger{36}): %msg%n}</Property>
+		<Property name="fileOutputPattern">%d{DEFAULT} [%t] %-5level (%logger{36}): %msg%n
+		</Property>
+	</Properties>
+	<!-- <Filter /> -->
+
+	<Appenders>
+
+		<Console name="stdout" target="SYSTEM_OUT">
+			<PatternLayout pattern="${consoleOutputPattern}" />
+			<ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+		</Console>
+
+		<RollingFile name="rollingFile" fileName="logs/app.log"
+			bufferedIO="true"
+			filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.zip">
+			<PatternLayout pattern="${fileOutputPattern}" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="1 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="20" compressionLevel="1" />
+		</RollingFile>
+
+	</Appenders>
+
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="stdout" />
+			<AppenderRef ref="rollingFile" />
+		</Root>
+	</Loggers>
+
+</Configuration>

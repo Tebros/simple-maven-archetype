@@ -1,4 +1,4 @@
-# simple-maven-project
+# simple-maven-archetype
 
 This is a archetype for a clean and simple maven project.
 
