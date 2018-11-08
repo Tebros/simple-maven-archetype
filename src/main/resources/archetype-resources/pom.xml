@@ -8,6 +8,9 @@
 	<version>${version}</version>
 	<packaging>jar</packaging>
 
+	<!-- <parent></parent> -->
+	<!-- <modules></modules> -->
+
 	<properties>
 		<java.version>1.8</java.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -21,6 +24,8 @@
 		<maven.surefire.plugin.version>2.22.1</maven.surefire.plugin.version>
 		<maven.dependency.plugin.version>3.0.1</maven.dependency.plugin.version>
 	</properties>
+
+	<!-- <dependencyManagement></dependencyManagement> -->
 
 	<dependencies>
 		<!-- Start: JUnit -->
@@ -98,10 +103,11 @@
 			</plugin>
 		</plugins>
 	</build>
+	<!-- <reporting></reporting> -->
 
 	<name>The name of your project</name>
 	<description>A description of your project</description>
-	<url>https://tebros.de/</url>
+	<url>https://github.com/Tebros/simple-maven-archetype</url>
 	<inceptionYear>2018</inceptionYear>
 	<licenses>
 		<license>
@@ -110,13 +116,41 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+	<!-- <organization></organization> -->
 	<developers>
 		<developer>
 			<name>Tebros</name>
-			<email>info.tebros@web.de</email>
+			<email>info@tebros.de</email>
 			<url>https://tebros.de/</url>
 			<timezone>Europe/Berlin</timezone>
 		</developer>
 	</developers>
+	<!-- <contributors></contributors> -->
 
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/Tebros/simple-maven-archetype/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Travis</system>
+		<url>https://travis-ci.org/your-name/your-project-name/</url>
+	</ciManagement>
+	<!-- <mailingLists></mailingLists> -->
+	<scm>
+		<connection>scm:git:git://github.com/Tebros/simple-maven-archetype.git</connection>
+		<developerConnection>scm:git:git@github.com:Tebros/simple-maven-archetype.git</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/Tebros/simple-maven-archetype</url>
+	</scm>
+	
+	<!-- <prerequisites></prerequisites> -->
+	
+	<!-- <repositories></repositories> -->
+	
+	<!-- <pluginRepositories></pluginRepositories> -->
+	
+	<!-- <distributionManagement></distributionManagement> -->
+	
+	<!-- <profiles></profiles> -->
+	
 </project>
