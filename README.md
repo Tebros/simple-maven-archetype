@@ -30,9 +30,15 @@ Copyright (c) 2018 Tebros
 
 The maven archetype contains the following files.
 
+* .gitignore
 * LICENSE.md (MIT license)
 * pom.xml (includes JUnit 5)
 * README.md (see [here](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2))
+* src/main/java/App.java
+* src/main/resources/log4j2.xml
+* src/test/java/AppTest.java
+
+JUnit 5 and Log4j are listed in the dependencies tag of the pom.xml file.
 
 ### Changing the license
 

@@ -5,9 +5,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.tebros</groupId>
 	<artifactId>simple-maven-archetype</artifactId>
-	<version>0.1.0</version>
-	<name>Archetype - simple-maven-archetype</name>
+	<version>0.1.1</version>
 	<packaging>jar</packaging>
+
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -64,5 +64,36 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<name>Archetype: simple-maven-archetype</name>
+	<description>This is a archetype for a simple maven project with JUnit 5 and Log4j 2</description>
+	<url>https://github.com/Tebros/simple-maven-archetype</url>
+	<inceptionYear>2018</inceptionYear>
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>https://opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>Tebros</name>
+			<email>info@tebros.de</email>
+			<url>https://tebros.de/</url>
+			<timezone>Europe/Berlin</timezone>
+		</developer>
+	</developers>
+
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/Tebros/simple-maven-archetype/issues</url>
+	</issueManagement>
+	<scm>
+		<connection>scm:git:git://github.com/Tebros/simple-maven-archetype.git</connection>
+		<developerConnection>scm:git:git@github.com:Tebros/simple-maven-archetype.git</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/Tebros/simple-maven-archetype</url>
+	</scm>
 
 </project>
