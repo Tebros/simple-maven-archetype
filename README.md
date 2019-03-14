@@ -6,7 +6,19 @@ This is a archetype for a clean and simple maven project.
 
 ### Installing
 
-At the moment there is no remote archetype catalog. Therefore if you want to user this archetype, you need to download/clone this project and run the following command to build the archetype.
+#### Remote
+
+If it has not happened already, add the remote archetype catalog with the following URL to your IDE.
+
+```
+http://repo1.maven.org/maven2/archetype-catalog.xml
+```
+
+Now you can search for "simple-maven-archetype" in the catalog and select the latest version.
+
+#### Local
+
+You could also download/clone this project and run the following command to build the archetype locally.
 
 ```
 mvn clean install archetype:update-local-catalog
@@ -17,6 +29,8 @@ After you have installed the archetype, you are able to use it.
 ```
 mvn archetype:generate -DarchetypeGroupId=de.tebros -DarchetypeArtifactId=simple-maven-archetype -DarchetypeVersion=0.0.1 -DgroupId=de.tebros -DartifactId=my-test-project
 ```
+
+#### Post-Installing 
 
 Now feel free to change these files as you wish.
 
