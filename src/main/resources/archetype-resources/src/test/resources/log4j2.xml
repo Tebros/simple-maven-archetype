@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+	<Properties>
+		<Property name="consoleOutputPattern">%highlight{%d{HH:mm:ss} [%t] %-5level (%logger{36}): %msg%n}</Property>
+		<Property name="fileOutputPattern">%d{DEFAULT} [%t] %-5level (%logger{36}): %msg%n
+		</Property>
+	</Properties>
+	<!-- <Filter /> -->
+
+	<Appenders>
+
+		<Console name="stdout" target="SYSTEM_OUT">
+			<PatternLayout pattern="${consoleOutputPattern}" />
+			<ThresholdFilter level="trace" onMatch="ACCEPT" onMismatch="DENY"/>
+		</Console>
+
+	</Appenders>
+
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="stdout" />
+		</Root>
+	</Loggers>
+
+</Configuration>
